@@ -1,10 +1,14 @@
 package edu.sfsu.workout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+
+import java.util.ArrayList;
+
+import edu.sfsu.classes.models.DataModel;
 
 public class MainActivity extends AppCompatActivity implements WorkoutListFragment.Listener {
 
@@ -12,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements WorkoutListFragme
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ArrayList<DataModel> dataModel = new ArrayList<>();
     }
 
     @Override
